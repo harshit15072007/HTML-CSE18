@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GridLayout</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            width: 1200px;
+            height:800px;
+            margin: 0 auto;
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        nav, header, footer{
+            background-color: blueviolet;
+            height:140px;
+            text-align: center;
+            line-height: 140px;
+        }
+        .container{
+            display: flex;
+            background-color: darkcyan;
+            justify-content: space-between;
+            height: 300px;
+        }
+        .box{
+            margin: auto;
+            gap: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <nav><h2>Logo</h2></nav>
+    <header><h2>Header</h2></header>
+    <nav><h2>Textarea</h2></nav>
+   <div class="container">
+    <div class="box">Box1</div>
+    <div class="box">Box2</div>
+    <div class="box">Box3</div>
+   </div>
+   <footer><h2>Footer</h2></footer>
+    </main>
+</body>
+</html>
